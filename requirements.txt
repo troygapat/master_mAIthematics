@@ -1,0 +1,40 @@
+# AI Math Tutor - Python Dependencies
+
+# Core Framework
+streamlit>=1.30.0
+python-dotenv>=1.0.0
+
+# AI Integration
+anthropic>=0.18.0
+
+# Database
+sqlalchemy>=2.0.0
+alembic>=1.13.0
+
+# Math & LaTeX
+sympy>=1.12
+
+# Data Handling (using versions with pre-built Windows wheels)
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+plotly>=5.18.0
+
+# Utilities
+pyyaml>=6.0
+pydantic>=2.5.0
+python-dateutil>=2.8.0
+
+# Security & Authentication (for cloud deployment)
+bcrypt>=4.0.0
+PyJWT>=2.8.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Cloud Deployment
+gunicorn>=21.2.0
+psycopg2-binary>=2.9.0  # PostgreSQL adapter
+

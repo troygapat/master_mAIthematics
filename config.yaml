@@ -1,0 +1,108 @@
+# AI Math Tutor Configuration
+
+# Application Settings
+app:
+  name: "AI Math Tutor"
+  version: "1.0.0"
+  grade_levels:
+    min: 9
+    max: 12
+    focus: "High School Mathematics"
+  reading_level: 5  # 5th grade reading level for communication
+  
+# High School Math Topics (Grades 9-12)
+topics:
+  algebra_1:
+    - "Linear Equations"
+    - "Inequalities"
+    - "Systems of Equations"
+    - "Exponents and Radicals"
+    - "Polynomials"
+    - "Factoring"
+    - "Quadratic Equations"
+    - "Functions"
+    
+  geometry:
+    - "Angles and Triangles"
+    - "Polygons and Quadrilaterals"
+    - "Circles"
+    - "Similarity and Congruence"
+    - "Coordinate Geometry"
+    - "3D Geometry and Volume"
+    - "Trigonometry Basics"
+    
+  algebra_2:
+    - "Rational Expressions"
+    - "Complex Numbers"
+    - "Exponential Functions"
+    - "Logarithmic Functions"
+    - "Sequences and Series"
+    - "Conic Sections"
+    
+  trigonometry:
+    - "Unit Circle"
+    - "Trigonometric Functions"
+    - "Trigonometric Identities"
+    - "Solving Trigonometric Equations"
+    - "Law of Sines and Cosines"
+    
+  precalculus:
+    - "Advanced Functions"
+    - "Polynomial and Rational Functions"
+    - "Vectors"
+    - "Matrices"
+    - "Limits"
+    
+  calculus:
+    - "Limits and Continuity"
+    - "Derivatives"
+    - "Applications of Derivatives"
+    - "Integrals"
+    - "Applications of Integrals"
+
+# Session Settings
+session:
+  max_history_messages: 50
+  context_window_tokens: 8000
+  auto_save_interval_seconds: 30
+  session_timeout_minutes: 60
+
+# Practice Problem Settings
+practice:
+  problems_per_set: 5
+  difficulty_levels:
+    - "easy"
+    - "medium"
+    - "hard"
+    - "challenge"
+  problem_types:
+    - "multiple_choice"
+    - "short_answer"
+    - "word_problem"
+    - "proof"
+
+# Progress Tracking
+progress:
+  skill_levels:
+    - "beginner"
+    - "developing"
+    - "proficient"
+    - "advanced"
+  mastery_threshold: 0.80  # 80% accuracy for mastery
+
+# UI Settings
+ui:
+  theme: "light"
+  sidebar_width: 300
+  chat_max_height: 600
+  enable_latex: true
+  enable_graphs: true
+  messages_per_page: 50
+
+# Cloud Deployment Settings
+deployment:
+  max_concurrent_users: 100
+  rate_limit_per_minute: 60
+  enable_monitoring: true
+  log_level: "INFO"
+

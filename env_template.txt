@@ -1,0 +1,37 @@
+# AI Math Tutor - Environment Variables
+# Copy this file to .env and fill in your values
+
+# AI Configuration (REQUIRED)
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+
+# Database Configuration
+DATABASE_URL=sqlite:///data/tutoring.db
+# For production PostgreSQL: postgresql://user:password@host:port/dbname
+
+# Application Settings
+APP_ENV=development
+SECRET_KEY=change-this-to-a-random-secret-key-for-production
+DEBUG=True
+
+# Session Settings
+SESSION_TIMEOUT_MINUTES=60
+MAX_CONVERSATION_HISTORY=50
+
+# AI Model Settings
+AI_MODEL=claude-sonnet-4-5-20250929
+AI_MAX_TOKENS=4096
+AI_TEMPERATURE=0.7
+
+# Feature Flags
+ENABLE_AUTHENTICATION=False
+ENABLE_ANALYTICS=True
+ENABLE_TEST_PREP=True
+
+# Instructions:
+# 1. Copy this file and save it as .env (without .txt extension)
+# 2. Get your Anthropic API key from: https://console.anthropic.com/
+# 3. Replace 'your_anthropic_api_key_here' with your actual key
+# 4. For production, generate a secure SECRET_KEY using:
+#    python -c "import secrets; print(secrets.token_urlsafe(32))"
+# 5. Save the file
+
